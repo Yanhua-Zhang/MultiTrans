@@ -1,11 +1,17 @@
 # MultiTrans
-This repository includes the official project of our paper: MultiTrans: Multi-Branch Transformer Decoder Network for Medical Image Segmentation.
+This repository includes the official project of our paper submitted to IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI’23). Title: "MultiTrans: Multi-Branch Transformer Network for Medical Image Segmentation".
 
 ## Usage
 
+### 0. To be noted:
+
+- We will gradually optimize the code to make it more readable and standardized.
+
+- When loading pre-trained Resnet models and the preprocessed dataset, we use absolute paths in our code. So you can put the pre-trained models and the dataset under any path. Then, please modify their file paths in the code. The position that needs to be modified in the code can be easily found through the error message :).
+
 ### 1. Download pre-trained Resnet models
 
-Please note that when loading pre-trained Resnet models and the preprocessed dataset, we use absolute paths in our code. So you can put the pre-trained models and the dataset under any path. Then, please modify the file path of them in the code, and their locations in the code can be easily found according to the error message.
+Download the pre-trained Resnet models and the dataset under any path. Then, modify their file paths in the code.
 
 resnet50-deep-stem:[link](https://drive.google.com/file/d/1OktRGqZ15dIyB2YTySLfOVtprerHgbef/view?usp=sharing)
 
@@ -21,7 +27,7 @@ resnet18:[link](https://drive.google.com/file/d/1LCybGjJ_d-nALvciBBkZil_XfO-7ptA
 
 - Download the dataset from [official website](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789). Convert them to numpy format, clip within [-125, 275], normalize each 3D volume to [0, 1], and extract 2D slices from 3D volume for training while keeping the testing 3D volume in h5 format.
 
-- Directly use [preprocessed data](https://drive.google.com/file/d/1XjHzJageFKFN7Tg-6F2NJz2sj9hSLPK0/view?usp=sharing) provided by [TransUNet](https://github.com/Beckschen/TransUNet).
+- Or directly use [preprocessed data](https://drive.google.com/file/d/1XjHzJageFKFN7Tg-6F2NJz2sj9hSLPK0/view?usp=sharing) provided by [TransUNet](https://github.com/Beckschen/TransUNet).
 
 ### 3. Environment
 
@@ -35,10 +41,10 @@ Please refer to 'requirements.txt' for other dependencies.
 
 ### 4. Test our trained model 
 
-Download the trained model:[link](https://drive.google.com/drive/folders/17Zs8F6pKSt5C6BAo0uPhsCssobsiE98S?usp=sharing). Put 'epoch_149.pth' into this file: 'Results/model_Trained/MultiTrans_Synapse224/Model/MultiTrans_pretrain_resnet50_deep_V10_epo150_bs24_224_s12100'. Run the following order.
+Download the trained model:[link](https://drive.google.com/drive/folders/17Zs8F6pKSt5C6BAo0uPhsCssobsiE98S?usp=sharing). Put 'epoch_149.pth' into this file: 'Results\model_Trained\My_MultiTrans_V0_Synapse224\Model\My_MultiTrans_V0_pretrain_resnet50_Deep_V0_epo150_bs24_224_s1294'. Run the following order.
 
 ```bash
-cd MultiTrans
+cd Project_MultiTrans_V0
 ```
 
 ```bash
@@ -48,7 +54,7 @@ CUDA_VISIBLE_DEVICES=0 python test.py --dataset Synapse --Model_Name MultiTrans 
 ### 5. Train/Test by yourself
 
 ```bash
-cd MultiTrans
+cd Project_MultiTrans_V0
 ```
 
 - Run the train script.
