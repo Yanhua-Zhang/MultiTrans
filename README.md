@@ -7,21 +7,23 @@ This repository includes the official project of our paper submitted to IEEE-EMB
 
 - We will gradually optimize the code to make it more readable and standardized.
 
-- When loading pre-trained Resnet models and the preprocessed dataset, we use absolute paths in our code. So you can put the pre-trained models and the dataset under any path. Then, please modify their file paths in the code. The position that needs to be modified in the code can be easily found through the error message :).
+- If you have any suggestions for improvement or encounter any issues while using this code, please feel free to contact me: zhangyanhua@mail.nwpu.edu.cn
+
+- When loading pre-trained Resnet models and the preprocessed dataset, we use absolute paths in our code. So you can put the pre-trained models and the dataset under any path. Then, please modify their file paths in the code. The position that needs to be modified in the code can be easily found through the error message : ).
 
 ### 1. Download pre-trained Resnet models
 
 Download the pre-trained Resnet models and the dataset under any path. Then, modify their file paths in the code.
 
-resnet50-deep-stem:[link](https://drive.google.com/file/d/1OktRGqZ15dIyB2YTySLfOVtprerHgbef/view?usp=sharing)
+- resnet50-deep-stem:[link](https://drive.google.com/file/d/1OktRGqZ15dIyB2YTySLfOVtprerHgbef/view?usp=sharing)
 
-resnet50:[link](https://drive.google.com/file/d/1fUAuRfewRpaS5mFX_IQqrE2syEn9PXrv/view?usp=sharing)
+- resnet50:[link](https://drive.google.com/file/d/1fUAuRfewRpaS5mFX_IQqrE2syEn9PXrv/view?usp=sharing)
 
-resnet34:[link](https://drive.google.com/file/d/18Erx_ISMt1XMjJlgl4SQsr-iMvcN-7bZ/view?usp=sharing)
+- resnet34:[link](https://drive.google.com/file/d/18Erx_ISMt1XMjJlgl4SQsr-iMvcN-7bZ/view?usp=sharing)
 
-resnet18-deep-stem:[link](https://drive.google.com/file/d/1q1VBV37acIte0GynoS054BWfwwdx1NiZ/view?usp=sharing)
+- resnet18-deep-stem:[link](https://drive.google.com/file/d/1q1VBV37acIte0GynoS054BWfwwdx1NiZ/view?usp=sharing)
 
-resnet18:[link](https://drive.google.com/file/d/1LCybGjJ_d-nALvciBBkZil_XfO-7ptAE/view?usp=sharing)
+- resnet18:[link](https://drive.google.com/file/d/1LCybGjJ_d-nALvciBBkZil_XfO-7ptAE/view?usp=sharing)
 
 ### 2. Prepare data
 
@@ -33,11 +35,11 @@ resnet18:[link](https://drive.google.com/file/d/1LCybGjJ_d-nALvciBBkZil_XfO-7ptA
 
 We trained our model on one NVIDIA GeForce GTX 3090 with the CUDA 11.1 and CUDNN 8.0.
 
-Python 3.8.13.
+- Python 3.8.13.
 
-PyTorch 1.8.1. 
+- PyTorch 1.8.1. 
 
-Please refer to 'requirements.txt' for other dependencies.
+- Please refer to 'requirements.txt' for other dependencies.
 
 ### 4. Test our trained model 
 
