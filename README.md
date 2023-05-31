@@ -99,11 +99,11 @@ Add or replace following orders to train-script and test-script.
 - If you want to replace our efficient self-attention with stand self-attention, you need to train the model on 3 GPUs with halved batch sizes and base_lr:
 
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2 python train.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_in_channels 128 256 512 512 1024 --branch_out_channels 256 --branch_key_channels 8 16 32 64 128 --branch_choose 1 2 3 4 --If_efficient_attention False --n_gpu 3 --batch_size 4 --base_lr 0.005 --seed 1294
+CUDA_VISIBLE_DEVICES=0,1,2 python train.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_in_channels 128 256 512 512 1024 --branch_out_channels 256 --branch_key_channels 8 16 32 64 128 --branch_choose 1 2 3 4 --If_efficient_attention False --one_kv_head False --share_kv False --n_gpu 3 --batch_size 4 --base_lr 0.005 --seed 1294
 ```
 
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2 python test.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_in_channels 128 256 512 512 1024 --branch_out_channels 256 --branch_key_channels 8 16 32 64 128 --branch_choose 1 2 3 4 --If_efficient_attention False --n_gpu 3 --batch_size 4 --base_lr 0.005 --seed 1294
+CUDA_VISIBLE_DEVICES=0,1,2 python test.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_in_channels 128 256 512 512 1024 --branch_out_channels 256 --branch_key_channels 8 16 32 64 128 --branch_choose 1 2 3 4 --If_efficient_attention False --one_kv_head False --share_kv False --n_gpu 3 --batch_size 4 --base_lr 0.005 --seed 1294
 ```
 
 ## Reference
