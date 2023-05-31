@@ -73,7 +73,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py --dataset Synapse --Model_Name My_MultiTr
 CUDA_VISIBLE_DEVICES=0 python test.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_in_channels 128 256 512 512 1024 --branch_out_channels 256 --branch_key_channels 8 16 32 64 128 --branch_choose 1 2 3 4 --seed 1294
 ```
 
-### 6. Ablation Experiments on multi-branch design
+### 6. Ablation experiments on multi-branch design
 
 Add following orders to train-script and test-script.
 
