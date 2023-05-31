@@ -71,7 +71,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py --dataset Synapse --Model_Name My_MultiTr
 CUDA_VISIBLE_DEVICES=0 python test.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_in_channels 128 256 512 512 1024 --branch_out_channels 256 --branch_key_channels 8 16 32 64 128 --branch_choose 1 2 3 4 --seed 1294
 ```
 
-### 5. Ablation Experiments on multi-branch design
+### 6. Ablation Experiments on multi-branch design
 
 Add following orders to train-script and test-script.
 
@@ -86,8 +86,9 @@ Add following orders to train-script and test-script.
 ```bash
 --branch_choose 2 3 4   # 2 3 4 or 1 3 4 or 1 2 4 or 1 2 3 
 ```
+### 7. Ablation experiments on the design of efficient self-attention
 
-- Ablation experiments on the design of efficient self-attention. If_efficient_attention: use Order-Changing or not; one_kv_head: use Head-Sharing or not; share_kv: use Projection-Sharing or not:
+- If_efficient_attention: use Order-Changing or not; one_kv_head: use Head-Sharing or not; share_kv: use Projection-Sharing or not:
 
 ```bash
 --If_efficient_attention True --one_kv_head True --share_kv False   
