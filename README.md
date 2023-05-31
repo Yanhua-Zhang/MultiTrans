@@ -7,7 +7,7 @@ This repository includes the official project of our paper submitted to IEEE-EMB
 
 - We will gradually optimize the code to make it more readable and standardized.
 
-- If you have any suggestions for improvement or encounter any issues while using this code, please feel free to contact me: zhangyanhua@mail.nwpu.edu.cn
+- If you have any suggestions for improvement or encounter any issues while using this code, please feel free to contact me: yanhuazhang@mail.nwpu.edu.cn
 
 - When loading pre-trained Resnet models and the preprocessed dataset, we use absolute paths in our code. So you can put the pre-trained models and the dataset under any path. Then, please modify their file paths in the code. The position that needs to be modified in the code can be easily found through the error message : ).
 
