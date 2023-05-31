@@ -230,5 +230,5 @@ if __name__ == '__main__':
     # print(model)
     # print(model.conv2)
 
-    model = resnet50_SFNet(pretrained=True)
+    model = resnet50_Deep(pretrained=True)
     print(model)
