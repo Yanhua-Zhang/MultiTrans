@@ -41,7 +41,7 @@ Please refer to 'requirements.txt' for other dependencies.
 
 ### 4. Test our trained model 
 
-Download the trained model:[link](https://drive.google.com/drive/folders/17Zs8F6pKSt5C6BAo0uPhsCssobsiE98S?usp=sharing). Put 'epoch_149.pth' into this file: 'Results\model_Trained\My_MultiTrans_V0_Synapse224\Model\My_MultiTrans_V0_pretrain_resnet50_Deep_V0_epo150_bs24_224_s1294'. Run the following order.
+Download the trained model:[link](https://drive.google.com/file/d/1HXqO9r_wmfIHzg0l0q8V5EC1cVyl-HCu/view?usp=sharing). Put 'epoch_149.pth' into this file: 'Results\model_Trained\My_MultiTrans_V0_Synapse224\Model\My_MultiTrans_V0_pretrain_resnet50_Deep_V0_epo150_bs24_224_s1294'. Run the following order.
 
 ```bash
 cd Project_MultiTrans_V0
