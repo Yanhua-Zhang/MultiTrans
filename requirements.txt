@@ -8,3 +8,4 @@ medpy
 SimpleITK
 scipy
 h5py
+fvcore
