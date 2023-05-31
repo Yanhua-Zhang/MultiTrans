@@ -75,7 +75,7 @@ CUDA_VISIBLE_DEVICES=0 python test.py --dataset Synapse --Model_Name My_MultiTra
 
 ### 6. Ablation experiments on multi-branch design
 
-Add or replace following orders to train-script and test-script.
+Add or replace the following commands in the training script and test script.
 
 - Use a single Transformer branch:
 
