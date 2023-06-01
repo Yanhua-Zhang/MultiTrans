@@ -177,7 +177,7 @@ if __name__ == "__main__":
     dataset_config = {
         'Synapse': {
             'Dataset': Synapse_dataset,
-            'volume_path': '/home/zhangyanhua/Code_python/Dataset/Medical_Dataset/Synapse/test_vol_h5', # 换绝对路径
+            'volume_path': '../preprocessed_data/Synapse/test_vol_h5', # 换绝对路径
             'list_dir': './lists/lists_Synapse',
             'num_classes': 9,
             'z_spacing': 1,  # 这个是啥？？
