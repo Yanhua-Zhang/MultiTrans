@@ -52,7 +52,7 @@ cd Project_MultiTrans_V0
 ```
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python test.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_choose 1 2 3 4 --seed 1294
+CUDA_VISIBLE_DEVICES=0 python test.py --dataset Synapse --Model_Name My_MultiTrans_V0 --seed 1294
 ```
 
 ### 5. Train/Test by yourself
@@ -64,13 +64,13 @@ cd Project_MultiTrans_V0
 - Run the train script.
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python train.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_choose 1 2 3 4 --seed 1294
+CUDA_VISIBLE_DEVICES=0 python train.py --dataset Synapse --Model_Name My_MultiTrans_V0 --seed 1294
 ```
 
 - Run the test script.
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python test.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_choose 1 2 3 4 --seed 1294
+CUDA_VISIBLE_DEVICES=0 python test.py --dataset Synapse --Model_Name My_MultiTrans_V0 --seed 1294
 ```
 
 ## Reference
