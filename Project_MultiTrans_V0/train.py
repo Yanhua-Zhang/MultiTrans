@@ -165,7 +165,7 @@ if __name__ == "__main__":
     # 选择数据集：
     dataset_config = {
         'Synapse': {
-            'root_path': '/home/zhangyanhua/Code_python/Dataset/Medical_Dataset/Synapse/train_npz',   # 换为绝对路径
+            'root_path': '../preprocessed_data/Synapse/train_npz',   # 换为绝对路径
             'list_dir': './lists/lists_Synapse',
             'num_classes': 9,
         },
