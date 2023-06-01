@@ -52,7 +52,7 @@ cd Project_MultiTrans_V0
 ```
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python test.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_in_channels 128 256 512 512 1024 --branch_out_channels 256 --branch_key_channels 8 16 32 64 128 --branch_choose 1 2 3 4 --seed 1294
+CUDA_VISIBLE_DEVICES=0 python test.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_choose 1 2 3 4 --seed 1294
 ```
 
 ### 5. Train/Test by yourself
@@ -64,53 +64,13 @@ cd Project_MultiTrans_V0
 - Run the train script.
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python train.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_in_channels 128 256 512 512 1024 --branch_out_channels 256 --branch_key_channels 8 16 32 64 128 --branch_choose 1 2 3 4 --seed 1294
+CUDA_VISIBLE_DEVICES=0 python train.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_choose 1 2 3 4 --seed 1294
 ```
 
 - Run the test script.
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python test.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_in_channels 128 256 512 512 1024 --branch_out_channels 256 --branch_key_channels 8 16 32 64 128 --branch_choose 1 2 3 4 --seed 1294
-```
-
-### 6. Ablation experiments on multi-branch design
-
-Add or replace the following commands in the training script and test script.
-
-- Use a single Transformer branch:
-
-```bash
---branch_choose 1   # 1 or 2 or 3 or 4
-```
-
-- Remove one of the four branches:
-
-```bash
---branch_choose 2 3 4   # 2 3 4 or 1 3 4 or 1 2 4 or 1 2 3 
-```
-
-- Remove Long-Skip connection (LS) used for Local-Global feature fusion.
-
-```bash
---If_Local_GLobal_Fuison False
-```
-
-### 7. Ablation experiments on the design of efficient self-attention
-
-- If_efficient_attention: use Order-Changing or not; one_kv_head: use Head-Sharing or not; share_kv: use Projection-Sharing or not:
-
-```bash
---If_efficient_attention True --one_kv_head True --share_kv False   
-```
-
-- If you want to replace our efficient self-attention with stand self-attention, you need to train the model on 3 GPUs with halved batch sizes and base_lr:
-
-```bash
-CUDA_VISIBLE_DEVICES=0,1,2 python train.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_in_channels 128 256 512 512 1024 --branch_out_channels 256 --branch_key_channels 8 16 32 64 128 --branch_choose 1 2 3 4 --If_efficient_attention False --one_kv_head False --share_kv False --n_gpu 3 --batch_size 4 --base_lr 0.005 --seed 1294
-```
-
-```bash
-CUDA_VISIBLE_DEVICES=0,1,2 python test.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_in_channels 128 256 512 512 1024 --branch_out_channels 256 --branch_key_channels 8 16 32 64 128 --branch_choose 1 2 3 4 --If_efficient_attention False --one_kv_head False --share_kv False --n_gpu 3 --batch_size 4 --base_lr 0.005 --seed 1294
+CUDA_VISIBLE_DEVICES=0 python test.py --dataset Synapse --Model_Name My_MultiTrans_V0 --branch_choose 1 2 3 4 --seed 1294
 ```
 
 ## Reference
