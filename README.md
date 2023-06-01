@@ -11,7 +11,7 @@ This repository includes the official project of our paper submitted to IEEE-EMB
 
 ### 1. Download pre-trained Resnet models
 
-Download the pre-trained Resnet models and put them into the dictionary "pre_trained_Resnet".
+Download the pre-trained Resnet models and put them into the folder "pre_trained_Resnet".
 
 - resnet50-deep-stem:[link](https://drive.google.com/file/d/1OktRGqZ15dIyB2YTySLfOVtprerHgbef/view?usp=sharing)
 
@@ -25,7 +25,7 @@ Download the pre-trained Resnet models and put them into the dictionary "pre_tra
 
 ### 2. Prepare data
 
-Download the preprocessed data and put it into the dictionary "preprocessed_data".
+Download the preprocessed data and put it into the folder "preprocessed_data".
 
 - Download the Synapse dataset from [official website](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789). Convert them to numpy format, clip within [-125, 275], normalize each 3D volume to [0, 1], and extract 2D slices from 3D volume for training while keeping the testing 3D volume in h5 format.
 
@@ -45,7 +45,7 @@ We trained our model on one NVIDIA GeForce GTX 3090 with the CUDA 11.1 and CUDNN
 
 - Download the trained model:[link](https://drive.google.com/file/d/1HXqO9r_wmfIHzg0l0q8V5EC1cVyl-HCu/view?usp=sharing). This trained model reached 82.30% DSC and 21.10 mm HD on the Synapse dataset, without using deep supervision and sophisticated data augmentation methods. 
 
-- Put 'epoch_149.pth' into this file: 'Results\model_Trained\My_MultiTrans_V0_Synapse224\Model\My_MultiTrans_V0_pretrain_resnet50_Deep_V0_epo150_bs24_224_s1294'. Run the following order:
+- Put 'epoch_149.pth' into this folder: 'Results\model_Trained\My_MultiTrans_V0_Synapse224\Model\My_MultiTrans_V0_pretrain_resnet50_Deep_V0_epo150_bs24_224_s1294'. Run the following order:
 
 ```bash
 cd Project_MultiTrans_V0
