@@ -9,11 +9,9 @@ This repository includes the official project of our paper submitted to IEEE-EMB
 
 - If you have any suggestions for improvement or encounter any issues while using this code, please feel free to contact me: yanhuazhang@mail.nwpu.edu.cn
 
-- When loading pre-trained Resnet models and the preprocessed dataset, we use absolute paths in our code. So you can put the pre-trained models and the dataset under any path. Then, please modify their file paths in the code. The position that needs to be modified in the code can be easily found through the error message : ).
-
 ### 1. Download pre-trained Resnet models
 
-Download the pre-trained Resnet models and the dataset under any path. Then, modify their file paths in the code.
+Download the pre-trained Resnet models and put them into the dictionary "pre_trained_Resnet".
 
 - resnet50-deep-stem:[link](https://drive.google.com/file/d/1OktRGqZ15dIyB2YTySLfOVtprerHgbef/view?usp=sharing)
 
@@ -26,6 +24,8 @@ Download the pre-trained Resnet models and the dataset under any path. Then, mod
 - resnet18:[link](https://drive.google.com/file/d/1LCybGjJ_d-nALvciBBkZil_XfO-7ptAE/view?usp=sharing)
 
 ### 2. Prepare data
+
+Download the preprocessed data and put it into the dictionary "preprocessed_data".
 
 - Download the Synapse dataset from [official website](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789). Convert them to numpy format, clip within [-125, 275], normalize each 3D volume to [0, 1], and extract 2D slices from 3D volume for training while keeping the testing 3D volume in h5 format.
 
