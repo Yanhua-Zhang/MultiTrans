@@ -182,7 +182,7 @@ def resnet18_Deep(pretrained=True, **kwargs):
     if pretrained:
         # model.load_state_dict(torch.load(
         #     "./pretrained_models/resnet18-deep-inplane128.pth", map_location="cpu"))
-        model_path = '/home/zhangyanhua/Code_python/model_pretrained/resnet18-deep-inplane128.pth'
+        model_path = '../pre_trained_Resnet/resnet18-deep-inplane128.pth'
         model.load_state_dict(torch.load(model_path, map_location="cpu"))  # GPU 加载到 CPU 
     return model
 
@@ -195,7 +195,7 @@ def resnet50_Deep(pretrained=True, **kwargs):
     model = ResNet(Bottleneck, [3, 4, 6, 3], **kwargs)
     if pretrained:
         model.load_state_dict(torch.load(
-            "/home/zhangyanhua/Code_python/model_pretrained/resnet50-deep.pth", map_location='cpu'))
+            "../pre_trained_Resnet/resnet50-deep.pth", map_location='cpu'))
     return model
 
 
