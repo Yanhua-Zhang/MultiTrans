@@ -88,6 +88,13 @@ Add or replace the following commands in the training script and test script.
 ```bash
 --branch_choose 2 3 4   # 2 3 4 or 1 3 4 or 1 2 4 or 1 2 3 
 ```
+
+- Remove Long-Skip connection (LS) used for Local-Global feature fusion.
+
+```bash
+--If_Local_GLobal_Fuison False
+```
+
 ### 7. Ablation experiments on the design of efficient self-attention
 
 - If_efficient_attention: use Order-Changing or not; one_kv_head: use Head-Sharing or not; share_kv: use Projection-Sharing or not:
