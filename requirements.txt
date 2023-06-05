@@ -1,4 +1,3 @@
-torchvision==0.9.1
 numpy
 tqdm
 tensorboard
@@ -9,3 +8,4 @@ SimpleITK
 scipy
 h5py
 fvcore
+opencv-python
