@@ -5,7 +5,7 @@ This repository includes the official project of our paper submitted to IEEE-EMB
 
 ### 0. To be noted:
 
-- We will gradually optimize the code to make it more readable and standardized.
+- The extended version of this work has been accepted by Computer Methods and Programs in Biomedicine, and the code is available here: [link](https://github.com/Yanhua-Zhang/MultiTrans-extension).
 
 - If you have any suggestions for improvement or encounter any issues while using this code, please feel free to contact me: yanhuazhang@mail.nwpu.edu.cn
 
